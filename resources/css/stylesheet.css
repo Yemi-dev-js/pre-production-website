@@ -176,8 +176,42 @@ nav ul li a{
     cursor: pointer;
 }
 
-.swiper {
+
+.event-container{
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-content{
+    margin: 0 40px;
+}
+.card{
+    border-radius: 25px;
+    background-color: #f9004d;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+/* .swiper {
     width: 600px;
     height: 300px;
-  }
+  } */
 
