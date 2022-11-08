@@ -11,15 +11,16 @@
 </head>
 <body>
     <!-- This is the landing page of the website -->
-    <nav>
-        <div class="logo">logo</div>
-        <div class="menu">
+    <nav id="navbar_11">
+        <!-- <div class="logo">logo</div> -->
+        <img src="resources/img/surfing-board-128.png"class="logo" >
+        <div id="menu">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Places</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#landing-page">Home</a></li>
+                <li><a href="#about-p">About</a></li>
+                <li><a href="#place-p">Places</a></li>
+                <li><a href="#faqs-p">FAQs</a></li>
+                <li><a href="#contact-p">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -29,12 +30,12 @@
         <div class="landing-page-content">
             <h1>Ocean Sea</h1>
             <p>Life is an adventure that needs to be captured</p>
-            <a href="#" class="button">See Places</a>
+            <a href="#place-p" class="button">See Places</a>
         </div>
     </header>
 
     <div class="about-container">
-        <section class="about">
+        <section class="about" id="about-p">
            <div class="about-main">
                 <img src="resources/img/jordan-mcqueen-u9tAl8WR3DI-unsplash.jpg" alt="What going on here" class="img-about">
                 <div class="about-text">
@@ -47,8 +48,13 @@
         </section>
     </div>
 
-        <div class="event-container">
-            <section class="events">
+        <div class="event-container" id="place-p">
+            <section class="events" >
+                <!-- <div class="event-text">
+                    <h1>Places</h1>
+                    <h5>Pick a <span>fun</span> place to visit </h5>                    
+                </div> -->
+
                 <div class="slide-container swiper">
                     <div class="slide-content">
                         <div class="card-wrapper swiper-wrapper">
@@ -64,7 +70,7 @@
                                 <div class="card-content">
                                     <h2 class="place">Barcelona,<span> Spain</span></h2>
                                     <p class="place-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. At sapiente esse ipsum. Magnam, incidunt! Voluptates quam sit odio quia aut.</p>
-                                    <button class="e-button">Book trip</button>
+                                    <a href="#contact-p"><button class="e-button">Book trip</button></a>
                                 </div>
 
                             </div>
@@ -81,7 +87,7 @@
                                 <div class="card-content">
                                     <h2 class="place">Tokyo,<span> Japan</span></h2>
                                     <p class="place-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. At sapiente esse ipsum. Magnam, incidunt! Voluptates quam sit odio quia aut.</p>
-                                    <button class="e-button">Book trip</button>
+                                    <a href="#contact-p"><button class="e-button">Book trip</button></a>
                                 </div>
 
                             </div>
@@ -98,7 +104,7 @@
                                 <div class="card-content">
                                     <h2 class="place">Bogota,<span> Colombia</span></h2>
                                     <p class="place-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. At sapiente esse ipsum. Magnam, incidunt! Voluptates quam sit odio quia aut.</p>
-                                    <button class="e-button">Book trip</button>
+                                    <a href="#contact-p"><button class="e-button">Book trip</button></a>
                                 </div>
 
                             </div>
@@ -115,7 +121,7 @@
                                 <div class="card-content">
                                     <h2 class="place">Cape Town,<span> South Africa</span></h2>
                                     <p class="place-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. At sapiente esse ipsum. Magnam, incidunt! Voluptates quam sit odio quia aut.</p>
-                                    <button class="e-button">Book trip</button>
+                                    <a href="#contact-p"><button class="e-button">Book trip</button></a>
                                 </div>
 
                             </div>
@@ -132,7 +138,7 @@
                                 <div class="card-content">
                                     <h2 class="place">Honolulu,<span> Hawaii</span></h2>
                                     <p class="place-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. At sapiente esse ipsum. Magnam, incidunt! Voluptates quam sit odio quia aut.</p>
-                                    <button class="e-button">Book trip</button>
+                                    <a href="#contact-p"><button class="e-button">Book trip</button></a>
                                 </div>
 
                             </div>
@@ -149,7 +155,7 @@
                                 <div class="card-content">
                                     <h2 class="place">Suva,<span> Fiji</span></h2>
                                     <p class="place-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. At sapiente esse ipsum. Magnam, incidunt! Voluptates quam sit odio quia aut.</p>
-                                    <button class="e-button">Book trip</button>
+                                    <a href="#contact-p"><button class="e-button">Book trip</button></a>
                                 </div>
 
                             </div>
@@ -166,7 +172,7 @@
                                 <div class="card-content">
                                     <h2 class="place">Rome,<span> Italy</span></h2>
                                     <p class="place-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. At sapiente esse ipsum. Magnam, incidunt! Voluptates quam sit odio quia aut.</p>
-                                    <button class="e-button">Book trip</button>
+                                    <a href="#contact-p"><button class="e-button">Book trip</button></a>
                                 </div>
 
                             </div>
@@ -183,7 +189,7 @@
                                 <div class="card-content">
                                     <h2 class="place">Bern,<span> Switzerland</span></h2>
                                     <p class="place-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. At sapiente esse ipsum. Magnam, incidunt! Voluptates quam sit odio quia aut.</p>
-                                    <button class="e-button">Book trip</button>
+                                    <a href="#contact-p"><button class="e-button">Book trip</button></a>
                                 </div>
 
                             </div>
@@ -200,7 +206,7 @@
                                 <div class="card-content">
                                     <h2 class="place">Bangkok,<span> Thailand</span></h2>
                                     <p class="place-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. At sapiente esse ipsum. Magnam, incidunt! Voluptates quam sit odio quia aut.</p>
-                                    <button class="e-button">Book trip</button>
+                                    <a href="#contact-p"><button class="e-button">Book trip</button></a>
                                 </div>
 
                             </div>
@@ -215,7 +221,7 @@
                 </div>
             </section>
         </div>
-        <div class="faqs-container">
+        <div class="faqs-container" id="faqs-p">
             <section id="faqs">
                 <div class="faq-container">
                     <div class="accordion">
@@ -276,8 +282,8 @@
             </section>
         </div>
 
-        <div class="contact-container">
-            <section class="contact">
+        <div class="contact-container" id="contact-p">
+            <section class="contact" >
                 <div class="c-container">
                     <h1>Contact the team!</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, officia. Illum, soluta neque numquam sunt sed tenetur error dicta. Iusto rerum animi, odio possimus a officia voluptatem nulla nam qui labore minus ea architecto magnam, perspiciatis quam. Temporibus autem expedita aspernatur quibusdam. Officia harum illo voluptatum, voluptate ipsa tempora nobis!</p>
@@ -338,7 +344,7 @@
                         </div>
 
                         <div class="submit-group">
-                            <input type="submit" value="Send Message">
+                            <input class="submit-button "type="submit" value="Send Message">
                         </div>
 
                     </form>
@@ -353,6 +359,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="vendors/js/funtionality.js"></script>
 </body>
 </html>

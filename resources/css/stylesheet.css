@@ -1,6 +1,11 @@
 * {
     margin: 0;
     padding: 0; 
+
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body  { 
@@ -22,6 +27,8 @@ header{
     margin: 16px 36px;
     color: white;
     font-weight: bold;
+    width: 40px;
+
     font-size: 24px;
 }
 
@@ -29,6 +36,10 @@ nav{
     position: fixed;
     width: 100%;
     justify-content: normal;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px 0px rgb(0, 0, 0, 0.1);
+    z-index: 10;
+
     
 }
 
@@ -36,7 +47,7 @@ nav ul{
     list-style: none;
     background: rgb(0, 0, 0, 0);
     overflow: hidden;
-    color: white;
+    color: #000000;
     padding: 0;
     text-align: right;
     margin: 0;
@@ -55,12 +66,19 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
+nav .sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    
+}
 
 #landing-page{
     background-image: url(../img/fabio-fistarol-SJJMmc_BYqk-unsplash.jpg);
@@ -99,8 +117,13 @@ nav ul li a{
 
 #landing-page .button:hover{
     background-color: white;
+    /* background-color: transparent; */
+    transition: 0.5s;
+    border: 2px solid #f9004d;
     color: #f9004d;
     cursor: pointer;
+
+
 }
 
 .about{
@@ -184,6 +207,39 @@ nav ul li a{
     display: flex;
     background-color: white;
 
+}
+
+.event-text{
+    max-width: 1120px;
+    margin: 0 auto !important;
+    padding-left: 32px;
+    padding-right:32px;
+    /* width: 550px; */
+    /* width: 1130px; */
+    /* max-width: 100vh; */
+    /* margin: 0 auto; */
+    /* display: block; */
+    /* align-items: center; */
+    /* justify-content: space-around; */
+}
+
+.event-text h1{
+    color: darkgray;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.event-text h5{
+    color: darkgray;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.event-text span{
+    color:#f9004d;
 }
 
 .events{
@@ -286,6 +342,7 @@ nav ul li a{
     color: #fff;
     padding: 8px 16px;
     background-color: #f9004d;
+    border: 2px solid transparent;
     border-radius: 30px;
     margin: 14px;
     cursor: pointer;
@@ -293,9 +350,14 @@ nav ul li a{
 }
 
 .e-button:hover{
-    background: white;
+    /* background: white;
     color: #f9004d;
-    border: 0.1px solid #f9004d;
+    border: 0.1px solid #f9004d; */
+    background-color: transparent;
+    transition: 0.5s;
+    border: 2px solid #f9004d;
+    color: #f9004d;
+    cursor: pointer;
     
 }
 
@@ -496,8 +558,17 @@ form .form-group .form-element{
     display: block;
     width: 100%;
     border-radius: 8px;
-    padding: 12px 0px;
+    padding: 12px 4px;
     background-color: #f3f3f3;
+    transition: 0.4s;
+}
+
+form .form-group .form-element:focus{
+    /* box-shadow: 0px, 0px, 6px, rgba(0, 0, 0, 0.7); */
+    box-shadow: 0 4px 20px 0px rgb(0, 0, 0, 0.1);
+    color: #ffffff;
+    background-color: #333;
+    /* background-color: #ffffff; */
 }
 
 form .form-group.full textarea{
@@ -505,9 +576,33 @@ form .form-group.full textarea{
     min-height: 100px;
 }
 
-form .form-group .submit-group{
+form .submit-group{
     grid-column: 1 / -1;
-    text-align: ;
+    text-align: right;
+    
+}
+
+form .submit-group .submit-button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 12px 16px;
+    background-color: #f9004d;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    
+}
+
+
+form .submit-group .submit-button:hover{
+    background-color: transparent;
+    transition: 0.5s;
+    border: 2px solid #f9004d;
+    color: #f9004d;
+    cursor: pointer;
 }
 
 
