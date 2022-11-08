@@ -72,6 +72,13 @@ nav ul li a{
     letter-spacing: 2px;
 }
 
+nav ul li a:hover{
+    color: #f9004d;
+    
+}
+
+
+
 nav .sticky{
     position: fixed;
     top: 0;
@@ -106,8 +113,8 @@ nav .sticky{
 #landing-page .button{
     font-size: 20px;
     text-decoration: none;
-    padding: 13px 30px;
-    /* padding: 0px 20px; */
+    /* padding: 13px 30px; */
+    padding: 5px 20px;
     border: 2px solid #f9004d;
     border-radius: 30px;
     background-color: #f9004d;
@@ -608,9 +615,83 @@ form .submit-group .submit-button:hover{
     cursor: pointer;
 }
 
+footer{
+    background: #111111;
+    height: auto;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 40px;
+    color: white;
+}
 
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
 
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
 
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+
+}
+
+.footer-content .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.footer-content .socials li{
+    margin: 0 10px;
+}
+
+.footer-content .socials li a{
+    text-decoration: none;
+    color: #ffffff
+}
+
+.footer-content .socials li a ion-icon{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.footer-content .socials li a:hover .twitter{
+    color: aqua;
+}
+
+.footer-content .socials li a:hover .fb{
+    color: rgb(0, 119, 255);
+}
+
+.footer-content .socials li a:hover .yt{
+    color: rgb(255, 0, 0);
+}
+
+.footer-content .socials li a:hover .ig{
+    color: rgb(132, 116, 41);
+}
+
+.footer-content .socials li a:hover .redd{
+    color: rgb(255, 94, 0);
+}
+
+.footer-content .socials li a:hover .snap{
+    color: rgb(255, 255, 0);
+}
 
 
 @media (min-width:768px) {
