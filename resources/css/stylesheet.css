@@ -330,6 +330,104 @@ nav ul li a{
 }
 
 
+
+/* faqs */
+
+.faqs-container{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: white;
+    box-sizing: border-box;
+    /* background-color: #707070; */
+ 
+}
+
+.faq-container{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.accordion-item{
+    /* background-color: #ec628d; */
+    background-color: #f9004d;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgb(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 20px 0px rgb(0, 0, 0, 0.1); */
+
+}
+
+.accordion-link{
+    font-size: 1.6rem;
+    color:rgb(255, 255, 255, .9);
+    text-decoration: none;
+    /* background-color: #ec628d ; */
+    background-color: #f9004d ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.accordion-link ion-icon{
+    color: white;
+    padding: .5rem;
+}
+
+.accordion-link .rm-o{
+    display: none;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    /* background-color: #b5043c; */
+    background-color: white;
+    transition: max-height 650ms;
+    
+}
+
+.answer::before{
+    content: '';
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: aqua;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.answer p{
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+
+.accordion-item:target .answer{
+    max-height: 20rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px){
 
     .slide-content{
@@ -340,14 +438,8 @@ nav ul li a{
     }
 
 };
-    
 
 
 
 
-
-/* .swiper {
-    width: 600px;
-    height: 300px;
-  } */
 
